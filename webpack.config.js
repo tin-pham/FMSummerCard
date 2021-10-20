@@ -1,5 +1,4 @@
 const path = require('path');
-oj;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const sass = {

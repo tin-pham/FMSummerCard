@@ -1,5 +1,19 @@
+@use 'utils/colors';
+@use 'utils/fonts';
+
 .button--link {
+	$color: colors.$purple-400;
+	$fontWeight: fonts.$bold;
+
+
+
 	background: none;
 	border: none;
 	text-decoration: underline;
+	color: $color;
+	font-weight: $fontWeight;
+
+	&:hover {
+		color: lighten($color, 20%);
+	}
 }

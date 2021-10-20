@@ -2,22 +2,37 @@
 @use 'utils/fonts';
 
 $fontWeight: fonts.$bolder;
+@mixin bigButton($backgroundColor: white, $text: black) {
+	background-color: $backgroundColor;
+	color: $text;
 
-.big-button {
 	border: none;
 	border-radius: 0.75em;
 	padding: 1em 0.5em;
 	font-weight: $fontWeight;
+
+	@if (lightness($backgroundColor) <= 70%) {
+		&:hover {
+			background-color: lighten($backgroundColor, 15%);
+		}
+	} @else {
+		&:hover {
+			color: darken($text, 15%);
+		}
+	}
 }
 
 .button--primary {
 	$backgroundColor: colors.$purple-400;
-	background-color: $backgroundColor;
-	color: white;
+	$text: white;
+
+	@include bigButton($backgroundColor, $text);
 	box-shadow: 0 0.5em 2em -1em $backgroundColor;
 }
 
 .button--secondary {
-	background-color: white;
-	color: colors.$blue-dark;
+	$backgroundColor: white;
+	$text: lighten(colors.$blue-dark, 40%);
+
+	@include bigButton($backgroundColor, $text);
 }
