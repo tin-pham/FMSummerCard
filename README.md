@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [FrontEndMentor](https://www.frontendmentor.io/solutions/responsive-sass-pug-and-webpack-Yp5a0weQ3)
+-   Live Site URL: [LiveSite](https://dazzling-torvalds-2f718a.netlify.app/)
 
 ## My process
 
