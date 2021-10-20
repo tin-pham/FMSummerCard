@@ -1,0 +1,27 @@
+{
+	"name": "order-summary-component-main",
+	"version": "1.0.0",
+	"description": "![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)",
+	"private": true,
+	"scripts": {
+		"start": "webpack-dev-server --config webpack.dev.js --open",
+		"build": "webpack --config webpack.prod.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"css-loader": "^6.4.0",
+		"html-webpack-plugin": "^5.4.0",
+		"mini-css-extract-plugin": "^2.4.2",
+		"pug": "^2.0.4",
+		"reload-html-webpack-plugin": "^0.1.2",
+		"sass-loader": "^12.2.0",
+		"simple-pug-loader": "^0.2.1",
+		"style-loader": "^3.3.0",
+		"webpack": "^5.58.2",
+		"webpack-cli": "^4.9.0",
+		"webpack-dev-server": "^4.3.1",
+		"webpack-merge": "^5.8.0"
+	}
+}

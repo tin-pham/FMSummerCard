@@ -1,0 +1,26 @@
+@use 'utils/colors';
+
+$cardPlanBackground: colors.$purple-white;
+.plan {
+	background: $cardPlanBackground;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	text-align: left;
+	display: grid;
+	grid-template-areas:
+		'icon text1 text1 button'
+		'icon text2 text2 button';
+	&__icon {
+		grid-area: icon;
+	}
+	&__title {
+		grid-area: text1;
+	}
+	&__price {
+		grid-area: text2;
+	}
+
+	.button--link {
+		grid-area: button;
+	}
+}

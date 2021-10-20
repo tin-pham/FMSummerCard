@@ -1,0 +1,12 @@
+@use 'utils/colors';
+@use 'utils/mixins' as *;
+.container {
+	min-height: inherit;
+	background: url('./assets/pattern-background-mobile.svg') top / contain
+		no-repeat;
+	padding-inline: 1em;
+	@include desktop {
+		background: url('./assets/pattern-background-desktop.svg') top / contain
+			no-repeat;
+	}
+}

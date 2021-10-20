@@ -1,0 +1,21 @@
+@forward 'cardPlan';
+@use 'utils/colors';
+$bodyText: colors.$blue-dark;
+
+.summer-card__body {
+	padding: 1.5em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+
+	.summer-card__title {
+		margin-bottom: 0.75em;
+	}
+	p {
+		display: inline-block;
+		color: $bodyText;
+		opacity: 0.5;
+		line-height: 1.75;
+	}
+}

@@ -1,0 +1,13 @@
+@use 'utils/fonts';
+
+$font: fonts.$redHat;
+* {
+	font-family: $font;
+}
+:root {
+	font-size: calc(0.75rem + 0.25vw);
+}
+
+button {
+	font-size: inherit;
+}

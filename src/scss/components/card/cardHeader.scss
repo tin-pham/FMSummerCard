@@ -1,0 +1,9 @@
+@use 'utils/colors';
+
+$fallBackBackground: colors.$purple-400;
+
+.summer-card__header {
+	height: 10em;
+	background: $fallBackBackground url('./assets/illustration-hero.svg') center /
+		cover no-repeat;
+}

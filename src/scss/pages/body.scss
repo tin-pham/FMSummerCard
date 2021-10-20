@@ -1,0 +1,6 @@
+@use 'utils/colors';
+$bodyBackground: colors.$purple-100;
+
+body {
+	background: $bodyBackground;
+}

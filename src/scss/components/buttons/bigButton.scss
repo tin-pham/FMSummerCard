@@ -1,0 +1,23 @@
+@use 'utils/colors';
+@use 'utils/fonts';
+
+$fontWeight: fonts.$bolder;
+
+.big-button {
+	border: none;
+	border-radius: 0.75em;
+	padding: 1em 0.5em;
+	font-weight: $fontWeight;
+}
+
+.button--primary {
+	$backgroundColor: colors.$purple-400;
+	background-color: $backgroundColor;
+	color: white;
+	box-shadow: 0 0.5em 2em -1em $backgroundColor;
+}
+
+.button--secondary {
+	background-color: white;
+	color: colors.$blue-dark;
+}
